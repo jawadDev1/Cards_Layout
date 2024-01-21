@@ -14,7 +14,7 @@ export default function ActionCard() {
 
   return (
     <View style={styles.actionCard}>
-      <Text style={styles.actionCardHeading}>ActionCard</Text>
+      <Text style={styles.actionCardHeading}>Action Card</Text>
       <View style={styles.actionContainer}>
         <View style={styles.actionContainerHeading}>
           <Text style={styles.actionContainerHeadingText}>What is React Native?</Text>
@@ -57,7 +57,6 @@ const styles = StyleSheet.create({
     marginBottom: 18,
   },
   actionContainer: {
-    borderRadius: 13,
     borderRadius: 22,
     padding: 8,
   },
@@ -77,6 +76,7 @@ const styles = StyleSheet.create({
   },
   actionContainerBody: {
     padding: 5,
+    backgroundColor: '#e84118',
   },
   actionContainerDescription: {},
   actionContainerReadMore: {

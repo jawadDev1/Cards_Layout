@@ -34,10 +34,13 @@ export default function ContactList() {
   ];
   return (
     <View style={styles.contactList}>
-      <Text style={styles.heading}>ContactList</Text>
+      <Text style={styles.heading}>Contact List</Text>
       <ScrollView style={styles.contactContainer}>
         {contacts.map(({uid, imageUrl, name, status}) => (
-          <View colors={['#00c6e7', '#0c647e']} key={uid} style={styles.userCard}>
+          <View
+            colors={['#00c6e7', '#0c647e']}
+            key={uid}
+            style={styles.userCard}>
             <Image source={{uri: imageUrl}} style={styles.userImage} />
             <View style={styles.cardBody}>
               <Text style={styles.userName}>{name}</Text>
@@ -81,6 +84,6 @@ const styles = StyleSheet.create({
   },
   userName: {
     fontSize: 17,
-    color: 'white'
+    color: 'white',
   },
 });
